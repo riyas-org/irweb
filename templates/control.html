@@ -10,6 +10,17 @@
         
         <div id ="remote">
             <svg width="100%">
+            	<style>
+        		g.btn:hover
+			{
+           			opacity: 0.5;
+		   		cursor: pointer;
+        		}
+			text
+			{
+				pointer-events: none;
+			}
+    		</style>
             	<svg viewBox="0 0 400 600">
 					<!-- Backgrounds -->
 					<g opacity=".5" >
@@ -29,17 +40,26 @@
 					</g>
 	
 					<!-- Controls-->
+					<g class="btn">
 					<circle cx="300" cy="88" r="30" fill="#990033" onclick="clickedOp('{{ d.id }}','KEY_CONNECT');" id="key_connect" />
 					  <text x="286" y="92" font-size="20" fill="white" onclick="clickedOp('{{ d.id }}','KEY_CONNECT');">ext</text>
+					</g>
+					<g class="btn">
 					<circle cx="200" cy="50" r="30" fill="#990033" onclick="clickedOp('{{ d.id }}','KEY_MENU');" id="key_menu" />
 					  <text x="180" y="55" font-size="18" fill="white" onclick="clickedOp('{{ d.id }}','KEY_MENU');">menu</text>
+					</g>
+					<g class="btn">
 					<circle cx="100" cy="88" r="30" fill="#990033" onclick="clickedOp('{{ d.id }}','KEY_INFO');" id="key_info" />
 					  <text x="86" y="92" font-size="18" fill="white" onclick="clickedOp('{{ d.id }}','KEY_INFO');">info</text>
+					</g>
+					<g class="btn">
 					<circle cx="56" cy="170" r="30" fill="#990033" onclick="clickedOp('{{ d.id }}','KEY_I');" id="key_i" />
 					  <text x="42" y="176" font-size="18" fill="white" onclick="clickedOp('{{ d.id }}','KEY_I');">sub</text>
+					</g>
+					<g class="btn">
 					<circle cx="346" cy="170" r="30" fill="#990033" onclick="clickedOp('{{ d.id }}','KEY_POWER');" id="key_power" />
 					  <text x="334" y="176" font-size="18" fill="white" onclick="clickedOp('{{ d.id }}','KEY_POWER');">pwr</text>
-
+					</g>
 
 					<!-- Colour Buttons -->
 					<circle cx="65"  cy="350" r="20" fill="red" onclick="clickedOp('{{ d.id }}','KEY_RED');" id="key_red" />
